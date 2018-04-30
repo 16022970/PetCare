@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffb144">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="179dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:fontFamily="casual"
+        android:lineSpacingExtra="8sp"
+        android:text="Pet Care"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvName2"
+        android:layout_centerVertical="true"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+    <TextView
+        android:id="@+id/tvName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextBreed"
+        android:layout_alignStart="@+id/tvName"
+        android:text="Breed"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_alignLeft="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextDate"
+        android:layout_alignStart="@+id/tvName"
+        android:text="Date of Birth:"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_alignLeft="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvName2"
+        android:layout_width="81dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/editTextDate"
+        android:layout_toStartOf="@+id/imageView3"
+        android:text="Additional: (Optional)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:layout_toLeftOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignEnd="@+id/buttonAddPet"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:ems="10"
+        android:hint="Breed"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/editTextBreed"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false" />
+
+    <EditText
+        android:id="@+id/editTextXtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/editTextDate"
+        android:ems="10"
+        android:hint="Any additional"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buttonAddPet"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="casual"
+        android:text="Add"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
